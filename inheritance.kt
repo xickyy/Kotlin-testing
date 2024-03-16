@@ -3,6 +3,7 @@ open class Drone {
   val type : String = "Drone"
 
   open fun setOff(){
+    println("${this.look} is taking off")
     move(0.0, 10.0, 0.0)
   }
 
@@ -15,10 +16,12 @@ class SuperheroDrone(): Drone() {
   override val look: String = "Superhero look"
 
   override fun move(front: Double, up: Double, rotate: Double) {
-    println("moving fast front:$front up:$up rotate:$rotate")
+    println("moving fast")
+    super.move(front, up, rotate)
   }
 
   override fun setOff() {
+    println("${this.look} is taking off")
     move(0.0, 15.0, 0.0)
   }
 }
