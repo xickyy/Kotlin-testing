@@ -35,4 +35,7 @@ fun main() {
 
   val user3: User = User(name = null)
   user3.flip()
+
+  println(user3?.name)
+  // add a questionmark befroe usting the dot property tro make sure the value to let left of the dot is not null, for example "user3?.name" will only work if user3 is not null
 }
