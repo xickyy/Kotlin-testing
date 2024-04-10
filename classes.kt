@@ -20,5 +20,6 @@ fun main() {
   println(employee2.label)
 //  employee2.label = "New Label"
 //  println(employee2.label)
+//
 
 }
